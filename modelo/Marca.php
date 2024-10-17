@@ -2,15 +2,17 @@
 
 class Marca {
     // Atributos
-    public $nombre;
+    public $marca;
+    public $modelo;
 
     // Constructor
-    public function __construct($nombre){
-        $this->nombre = $nombre;
+    public function __construct($marca, $modelo){
+        $this->marca = $marca;
+        $this->modelo = $modelo;
     }
 
     // Métodos
     public function muestra(){
-        return "Nombre de la marca: " . $this->nombre;
+        return "Marca: " . $this->marca . ", Modelo: " . $this->modelo;
     }
 }
